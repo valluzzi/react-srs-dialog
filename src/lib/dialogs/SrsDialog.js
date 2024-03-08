@@ -1,0 +1,1 @@
+import { spatial_ref_sys_all } from "../data/spatial_ref_sys_all";
