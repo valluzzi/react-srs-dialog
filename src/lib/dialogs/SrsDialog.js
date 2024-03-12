@@ -67,6 +67,7 @@ const SrsDialog = (props) => {
     <DialogTitle>Scegli un Projection System</DialogTitle>
     
     <Autocomplete
+      value={props.selectedOption}
       onChange={handleAutocompleteChange}
       disablePortal
       id="combo-box-demo"
@@ -74,7 +75,7 @@ const SrsDialog = (props) => {
       options={spatialData}
       sx={{ width: 300, margin: 3}}
       getOptionLabel={(option) => `${option.auth_id} - ${option.name}`}
-      renderInput={(params) => <TextField {...params} label="Projection" />}
+      renderInput={(params) => <TextField {...params} value={props.selectedOption} />}
       renderOption={(props, option) => (
         <li className="results" {...props} key={`${option.name}-${option.auth_id}-${Math.random()*100}`}>
         
