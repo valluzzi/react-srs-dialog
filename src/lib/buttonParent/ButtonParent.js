@@ -64,7 +64,11 @@ const ParentComponent = () => {
         {selectedOption && selectedOption.code ? `${selectedOption.authority}: ${selectedOption.code}` : 'Seleziona'}
       </Button>
 
-      <EpsgDialogSearch open={open} onClose={handleClose} onOptionSelect={handleOptionSelect} value={selectedOption}/>
+      <EpsgDialogSearch 
+        open={open} 
+        onClose={handleClose} 
+        onOptionSelect={handleOptionSelect} 
+        value={selectedOption}/>
     </>
   )
 }

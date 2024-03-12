@@ -1,0 +1,24 @@
+.EPSGDialogSearch tr:not(.no-results):hover, .EPSGDialogSearch th:hover{
+  cursor:pointer;
+}
+
+.EPSGDialogSearch tbody{
+  min-height:100px;
+}
+
+.EPSGDialogSearch table{
+  padding:40px;
+}
+
+.EPSGDialogSearch .MuiPaper-root.MuiPaper-elevation.MuiDialog-paper{
+  padding:40px 40px 50px;
+}
+
+.EPSGDialogSearch .MuiPaper-root.MuiPaper-elevation.MuiDialog-paper h2, .MuiInputBase-root{
+  margin-bottom:30px;
+}
+
+.EPSGDialogSearch .MuiPaper-root.MuiPaper-elevation.MuiDialog-paper h2{
+  margin-bottom:30px;
+}
+

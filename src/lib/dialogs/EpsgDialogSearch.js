@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { styled } from '@mui/material/styles';
-import './SrsDialogSearch.css';
+import './EpsgDialogSearch.css';
 import TextField from '@mui/material/TextField';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -17,7 +17,6 @@ import Dialog from '@mui/material/Dialog';
 const EpsgDialogSearch = (props) => {
 
   const { onClose, open, onOptionSelect } = props;
-
   const [searchTerm, setSearchTerm] = useState('');
   const [data, setData] = useState([]);
   
@@ -72,7 +71,9 @@ const EpsgDialogSearch = (props) => {
   }));
 
   return (
-  <Dialog 
+  <Dialog
+  sx = {props.sx} 
+  className='EPSGDialogSearch'
   onClose={handleClose} 
   open={open} 
   maxWidth="xl"
